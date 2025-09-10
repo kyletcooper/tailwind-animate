@@ -22,6 +22,22 @@
 	}
 }
 
+@utility -parallax-y-* {
+	@media (prefers-reduced-motion: no-preference) {
+		--tw-parallax-y: calc(--spacing(--value(integer)) * -1);
+		animation: parallax 1ms linear;
+		animation-timeline: view(y);
+	}
+}
+
+@utility -parallax-x-* {
+	@media (prefers-reduced-motion: no-preference) {
+		--tw-parallax-x: calc(--spacing(--value(integer)) * -1);
+		animation: parallax 1ms linear;
+		animation-timeline: view(x);
+	}
+}
+
 @keyframes parallax {
 	from {
 		translate: calc(-1 * var(--tw-parallax-x, 0px))
