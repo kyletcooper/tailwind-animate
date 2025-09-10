@@ -1,0 +1,46 @@
+@theme {
+	--animate-shift-to-t: shift-to-t 1s;
+	--animate-shift-to-r: shift-to-r 1s;
+	--animate-shift-to-b: shift-to-b 1s;
+	--animate-shift-to-l: shift-to-l 1s;
+
+	@keyframes clip-to-t {
+		from {
+			translate: 0 10%;
+		}
+
+		to {
+			translate: 0 0;
+		}
+	}
+
+	@keyframes clip-to-r {
+		from {
+			translate: 10% 0;
+		}
+
+		to {
+			translate: 0 0;
+		}
+	}
+
+	@keyframes clip-to-b {
+		from {
+			translate: 0 -10%;
+		}
+
+		to {
+			translate: 0 0;
+		}
+	}
+
+	@keyframes clip-to-l {
+		from {
+			translate: -10% 0;
+		}
+
+		to {
+			translate: 0 0;
+		}
+	}
+}
