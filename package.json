@@ -6,6 +6,7 @@
 	"exports": {
 		"default": "./src/index.css"
 	},
+	"repository": "https://github.com/kyletcooper/tailwind-animate",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
