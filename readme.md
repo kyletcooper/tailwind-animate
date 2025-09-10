@@ -62,4 +62,4 @@ Use `animation-direction` to change the direction of animations.
 
 ## Animation Play State
 
-Use `playing` and `paused` to control the animation play state.
+Use `running` and `paused` to control the animation play state.
