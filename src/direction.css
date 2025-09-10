@@ -1,0 +1,8 @@
+@utility animation-direction-* {
+	animation-direction: --value(
+		"normal",
+		"reverse",
+		"alternate",
+		"alternate-reverse"
+	);
+}

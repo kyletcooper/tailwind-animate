@@ -1,0 +1,13 @@
+@theme {
+	--animate-fade: fade var(--tw-duration, 1s) var(--tw-ease, linear);
+
+	@keyframes fade {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+}

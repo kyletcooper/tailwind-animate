@@ -1,0 +1,7 @@
+@utility playing {
+	animation-play-state: running;
+}
+
+@utility paused {
+	animation-play-state: paused;
+}

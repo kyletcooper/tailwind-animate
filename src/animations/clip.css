@@ -1,0 +1,46 @@
+@theme {
+	--animate-clip-to-t: clip-to-t var(--tw-duration, 1s) var(--tw-ease, linear);
+	--animate-clip-to-r: clip-to-r var(--tw-duration, 1s) var(--tw-ease, linear);
+	--animate-clip-to-b: clip-to-b var(--tw-duration, 1s) var(--tw-ease, linear);
+	--animate-clip-to-l: clip-to-l var(--tw-duration, 1s) var(--tw-ease, linear);
+
+	@keyframes clip-to-t {
+		from {
+			clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+		}
+
+		to {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		}
+	}
+
+	@keyframes clip-to-r {
+		from {
+			clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+		}
+
+		to {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		}
+	}
+
+	@keyframes clip-to-b {
+		from {
+			clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+		}
+
+		to {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		}
+	}
+
+	@keyframes clip-to-l {
+		from {
+			clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+		}
+
+		to {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		}
+	}
+}

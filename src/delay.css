@@ -1,0 +1,11 @@
+@utility animation-delay-* {
+	animation-delay: --value(--delay- *);
+	animation-delay: calc(--value(integer) * 1ms);
+	animation-delay: calc(--value([integer]) * 1ms);
+}
+
+@utility animation-delay-canon-* {
+	animation-delay: calc(--value(--delay- *) * var(--tw-canon-index, 1));
+	animation-delay: calc(--value(integer) * 1ms * var(--tw-canon-index, 1));
+	animation-delay: calc(--value([integer]) * 1ms * var(--tw-canon-index, 1));
+}

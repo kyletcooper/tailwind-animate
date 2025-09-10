@@ -1,0 +1,3 @@
+@utility fill-* {
+	animation-fill-mode: --value("forwards", "backwards", "both");
+}

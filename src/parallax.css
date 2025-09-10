@@ -1,0 +1,34 @@
+@utility parallax {
+	@media (prefers-reduced-motion: no-preference) {
+		animation: parallax 1ms linear;
+		animation-timeline: view(y);
+		animation-range: cover;
+	}
+}
+
+@utility parallax-y-* {
+	@media (prefers-reduced-motion: no-preference) {
+		--tw-parallax-y: --spacing(--value(integer));
+		animation: parallax 1ms linear;
+		animation-timeline: view(y);
+	}
+}
+
+@utility parallax-x-* {
+	@media (prefers-reduced-motion: no-preference) {
+		--tw-parallax-x: --spacing(--value(integer));
+		animation: parallax 1ms linear;
+		animation-timeline: view(x);
+	}
+}
+
+@keyframes parallax {
+	from {
+		translate: calc(-1 * var(--tw-parallax-x, 0px))
+			calc(-1 * var(--tw-parallax-y, 1rem));
+	}
+	to {
+		translate: calc(1 * var(--tw-parallax-x, 0px))
+			calc(1 * var(--tw-parallax-y, 1rem));
+	}
+}
