@@ -1,5 +1,5 @@
 {
-	"name": "tailwind-animate",
+	"name": "@wrdagency/tailwind-animate",
 	"version": "1.0.0",
 	"description": "Plugin for adding modern animation controls to TailwindCSS",
 	"main": "src/index.css",
