@@ -1,6 +1,6 @@
 {
 	"name": "@wrdagency/tailwind-animate",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Plugin for adding modern animation controls to TailwindCSS",
 	"main": "src/index.css",
 	"exports": {

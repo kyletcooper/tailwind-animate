@@ -9,3 +9,9 @@
 	animation-delay: calc(--value(integer) * 1ms * var(--tw-canon-index, 1));
 	animation-delay: calc(--value([integer]) * 1ms * var(--tw-canon-index, 1));
 }
+
+@utility animation-duration-* {
+	animation-duration: --value(--transition-duration- *);
+	animation-duration: calc(--value(integer) * 1ms);
+	animation-duration: calc(--value([integer]) * 1ms);
+}

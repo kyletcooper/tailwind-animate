@@ -1,7 +1,7 @@
 @import "./animations/index.css";
 
 @import "./canon.css";
-@import "./delay.css";
+@import "./timing.css";
 @import "./direction.css";
 @import "./easing.css";
 @import "./fill.css";
