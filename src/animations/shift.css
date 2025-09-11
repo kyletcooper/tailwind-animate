@@ -4,7 +4,7 @@
 	--animate-shift-to-b: shift-to-b 1s;
 	--animate-shift-to-l: shift-to-l 1s;
 
-	@keyframes clip-to-t {
+	@keyframes shift-to-t {
 		from {
 			translate: 0 10%;
 		}
@@ -14,7 +14,7 @@
 		}
 	}
 
-	@keyframes clip-to-r {
+	@keyframes shift-to-r {
 		from {
 			translate: 10% 0;
 		}
@@ -24,7 +24,7 @@
 		}
 	}
 
-	@keyframes clip-to-b {
+	@keyframes shift-to-b {
 		from {
 			translate: 0 -10%;
 		}
@@ -34,7 +34,7 @@
 		}
 	}
 
-	@keyframes clip-to-l {
+	@keyframes shift-to-l {
 		from {
 			translate: -10% 0;
 		}
