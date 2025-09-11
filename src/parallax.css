@@ -3,6 +3,7 @@
 		animation: parallax 1ms linear;
 		animation-timeline: view(y);
 		animation-range: cover;
+		animation-range: cover;
 	}
 }
 
@@ -11,6 +12,7 @@
 		--tw-parallax-y: --spacing(--value(integer));
 		animation: parallax 1ms linear;
 		animation-timeline: view(y);
+		animation-range: cover;
 	}
 }
 
@@ -19,6 +21,7 @@
 		--tw-parallax-x: --spacing(--value(integer));
 		animation: parallax 1ms linear;
 		animation-timeline: view(x);
+		animation-range: cover;
 	}
 }
 
@@ -27,6 +30,7 @@
 		--tw-parallax-y: calc(--spacing(--value(integer)) * -1);
 		animation: parallax 1ms linear;
 		animation-timeline: view(y);
+		animation-range: cover;
 	}
 }
 
@@ -35,6 +39,7 @@
 		--tw-parallax-x: calc(--spacing(--value(integer)) * -1);
 		animation: parallax 1ms linear;
 		animation-timeline: view(x);
+		animation-range: cover;
 	}
 }
 
