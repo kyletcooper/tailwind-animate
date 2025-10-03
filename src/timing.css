@@ -1,17 +1,29 @@
-@utility animation-delay-* {
-	animation-delay: --value(--delay- *);
-	animation-delay: calc(--value(integer) * 1ms);
-	animation-delay: calc(--value([integer]) * 1ms);
+@utility wait-* {
+	/* prettier-ignore */
+	animation-delay: --value(--delay-*);
+	animation-delay: calc(--value(integer) * 1ms + var(--tw-orchestrate));
+	animation-delay: calc(--value([integer]) * 1ms + var(--tw-orchestrate));
 }
 
-@utility animation-delay-canon-* {
-	animation-delay: calc(--value(--delay- *) * var(--tw-canon-index, 1));
-	animation-delay: calc(--value(integer) * 1ms * var(--tw-canon-index, 1));
-	animation-delay: calc(--value([integer]) * 1ms * var(--tw-canon-index, 1));
+@utility wait-canon-* {
+	/* prettier-ignore */
+	animation-delay: calc(--value(--delay-*) * var(--tw-canon-index, 1) + var(--tw-orchestrate));
+	animation-delay: calc(
+		--value(integer) * 1ms * var(--tw-canon-index, 1) + var(--tw-orchestrate)
+	);
+	animation-delay: calc(
+		--value([integer]) * 1ms * var(--tw-canon-index, 1) + var(--tw-orchestrate)
+	);
 }
 
-@utility animation-duration-* {
-	animation-duration: --value(--transition-duration- *);
-	animation-duration: calc(--value(integer) * 1ms);
-	animation-duration: calc(--value([integer]) * 1ms);
+@utility orchestrate-* {
+	--tw-orchestrate: calc(--value(integer) * 1ms);
+	--tw-orchestrate: calc(--value([integer]) * 1ms);
+}
+
+@utility wait-orchestrate-canon-* {
+	/* prettier-ignore */
+	--tw-orchestrate: calc(--value(--delay-*) * var(--tw-canon-index, 1));
+	--tw-orchestrate: calc(--value(integer) * 1ms * var(--tw-canon-index, 1));
+	--tw-orchestrate: calc(--value([integer]) * 1ms * var(--tw-canon-index, 1));
 }

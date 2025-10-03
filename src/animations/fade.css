@@ -1,5 +1,5 @@
 @theme {
-	--animate-fade: fade 1s;
+	--animate-fade: fade var(--tw-duration) var(--tw-ease);
 
 	@keyframes fade {
 		from {

@@ -1,9 +1,9 @@
 @theme {
-	--animate-zoom-in: zoom-in 1s;
-	--animate-zoom-out: zoom-out 1s;
+	--animate-zoom-in: zoom-in var(--tw-duration) var(--tw-ease);
+	--animate-zoom-out: zoom-out var(--tw-duration) var(--tw-ease);
 
-	--animate-grow-in: grow-in 1s;
-	--animate-grow-out: grow-out 1s;
+	--animate-grow-in: grow-in var(--tw-duration) var(--tw-ease);
+	--animate-grow-out: grow-out var(--tw-duration) var(--tw-ease);
 
 	@keyframes zoom-in {
 		from {
