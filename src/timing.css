@@ -1,18 +1,20 @@
 @utility wait-* {
 	/* prettier-ignore */
 	animation-delay: --value(--delay-*);
-	animation-delay: calc(--value(integer) * 1ms + var(--tw-orchestrate));
-	animation-delay: calc(--value([integer]) * 1ms + var(--tw-orchestrate));
+	animation-delay: calc(--value(integer) * 1ms + var(--tw-orchestrate, 0ms));
+	animation-delay: calc(--value([integer]) * 1ms + var(--tw-orchestrate, 0ms));
 }
 
 @utility wait-canon-* {
 	/* prettier-ignore */
-	animation-delay: calc(--value(--delay-*) * var(--tw-canon-index, 1) + var(--tw-orchestrate));
+	animation-delay: calc(--value(--delay-*) * var(--tw-canon-index, 1) + var(--tw-orchestrate, 0ms));
 	animation-delay: calc(
-		--value(integer) * 1ms * var(--tw-canon-index, 1) + var(--tw-orchestrate)
+		--value(integer) * 1ms * var(--tw-canon-index, 1) +
+			var(--tw-orchestrate, 0ms)
 	);
 	animation-delay: calc(
-		--value([integer]) * 1ms * var(--tw-canon-index, 1) + var(--tw-orchestrate)
+		--value([integer]) * 1ms * var(--tw-canon-index, 1) +
+			var(--tw-orchestrate, 0ms)
 	);
 }
 

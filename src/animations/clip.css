@@ -1,8 +1,12 @@
 @theme {
-	--animate-clip-to-t: clip-to-t var(--tw-duration) var(--tw-ease);
-	--animate-clip-to-r: clip-to-r var(--tw-duration) var(--tw-ease);
-	--animate-clip-to-b: clip-to-b var(--tw-duration) var(--tw-ease);
-	--animate-clip-to-l: clip-to-l var(--tw-duration) var(--tw-ease);
+	--animate-clip-to-t: clip-to-t var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
+	--animate-clip-to-r: clip-to-r var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
+	--animate-clip-to-b: clip-to-b var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
+	--animate-clip-to-l: clip-to-l var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
 
 	@keyframes clip-to-t {
 		from {

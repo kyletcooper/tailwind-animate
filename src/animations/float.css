@@ -1,8 +1,12 @@
 @theme {
-	--animate-float-to-t: float-to-t var(--tw-duration) var(--tw-ease);
-	--animate-float-to-r: float-to-r var(--tw-duration) var(--tw-ease);
-	--animate-float-to-b: float-to-b var(--tw-duration) var(--tw-ease);
-	--animate-float-to-l: float-to-l var(--tw-duration) var(--tw-ease);
+	--animate-float-to-t: float-to-t var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
+	--animate-float-to-r: float-to-r var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
+	--animate-float-to-b: float-to-b var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
+	--animate-float-to-l: float-to-l var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
 
 	@keyframes float-to-t {
 		from {

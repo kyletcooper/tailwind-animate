@@ -1,8 +1,12 @@
 @theme {
-	--animate-shift-to-t: shift-to-t var(--tw-duration) var(--tw-ease);
-	--animate-shift-to-r: shift-to-r var(--tw-duration) var(--tw-ease);
-	--animate-shift-to-b: shift-to-b var(--tw-duration) var(--tw-ease);
-	--animate-shift-to-l: shift-to-l var(--tw-duration) var(--tw-ease);
+	--animate-shift-to-t: shift-to-t var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
+	--animate-shift-to-r: shift-to-r var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
+	--animate-shift-to-b: shift-to-b var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
+	--animate-shift-to-l: shift-to-l var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
 
 	@keyframes shift-to-t {
 		from {

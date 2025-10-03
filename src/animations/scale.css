@@ -1,9 +1,11 @@
 @theme {
-	--animate-zoom-in: zoom-in var(--tw-duration) var(--tw-ease);
-	--animate-zoom-out: zoom-out var(--tw-duration) var(--tw-ease);
+	--animate-zoom-in: zoom-in var(--tw-duration, 1s) var(--tw-ease, ease-in-out);
+	--animate-zoom-out: zoom-out var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
 
-	--animate-grow-in: grow-in var(--tw-duration) var(--tw-ease);
-	--animate-grow-out: grow-out var(--tw-duration) var(--tw-ease);
+	--animate-grow-in: grow-in var(--tw-duration, 1s) var(--tw-ease, ease-in-out);
+	--animate-grow-out: grow-out var(--tw-duration, 1s)
+		var(--tw-ease, ease-in-out);
 
 	@keyframes zoom-in {
 		from {
