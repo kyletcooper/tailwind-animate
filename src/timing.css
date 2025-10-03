@@ -23,7 +23,7 @@
 	--tw-orchestrate: calc(--value([integer]) * 1ms);
 }
 
-@utility wait-orchestrate-canon-* {
+@utility orchestrate-canon-* {
 	/* prettier-ignore */
 	--tw-orchestrate: calc(--value(--delay-*) * var(--tw-canon-index, 1));
 	--tw-orchestrate: calc(--value(integer) * 1ms * var(--tw-canon-index, 1));
